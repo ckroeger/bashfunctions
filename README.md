@@ -46,9 +46,19 @@ backup important-file.txt
 ```bash
 # Get age of Ubuntu image (default tag: latest)
 get_docker_image_age postgres
+▶️ Trying to fetch age of postgres:latest...
+   🔍 Fetching manifest list for postgres:latest ...
+   ✅ Digest for amd64: sha256:babcdb287bd9087f2fa7e6d59b26f90922e3fd6a9d5d944b6a737eb360ad97b1
+✨ The image postgres:latest was created at: 2025-11-18T04:57:50Z
+📅 Age: 3 days
 
 # Get age of Ubuntu image with specific tag
-get_docker_image_age postgres 14
+get_docker_image_age postgres 12
+▶️ Trying to fetch age of postgres:12...
+   🔍 Fetching manifest list for postgres:12 ...
+   ✅ Digest for amd64: sha256:4bf4eb8e5932534db5fb9d3d91a212a91406aecf1fa626a60df4a9e2781d73ae
+✨ The image postgres:12 was created at: 2024-11-21T20:05:42Z
+📅 Age: 12 month(s) and 4 days
 ```
 
 ## Contributing
